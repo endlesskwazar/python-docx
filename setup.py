@@ -26,13 +26,13 @@ version = re.search(
 ).group(1)
 
 
-NAME = 'python-docx'
+NAME = 'python-docx-docm'
 VERSION = version
 DESCRIPTION = 'Create and update Microsoft Word .docx files.'
 KEYWORDS = 'docx office openxml word'
 AUTHOR = 'Steve Canny'
 AUTHOR_EMAIL = 'python-docx@googlegroups.com'
-URL = 'https://github.com/python-openxml/python-docx'
+URL = 'https://github.com/endlesskwazar/python-docx'
 LICENSE = text_of('LICENSE')
 PACKAGES = find_packages(exclude=['tests', 'tests.*'])
 PACKAGE_DATA = {'docx': ['templates/*.xml', 'templates/*.docx']}
@@ -58,15 +58,12 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries'
 ]
 
-LONG_DESCRIPTION = text_of('README.rst') + '\n\n' + text_of('HISTORY.rst')
-
 
 params = {
     'name':             NAME,
     'version':          VERSION,
     'description':      DESCRIPTION,
     'keywords':         KEYWORDS,
-    'long_description': LONG_DESCRIPTION,
     'author':           AUTHOR,
     'author_email':     AUTHOR_EMAIL,
     'url':              URL,
